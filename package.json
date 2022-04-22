@@ -1,15 +1,17 @@
 {
-  "name": "uni-prizren-api",
+  "name": "uni-prizren-wrapper",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "zip": "node zip-it.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@netlify/zip-it-and-ship-it": "^5.9.1",
     "cheerio": "^1.0.0-rc.10",
     "node-fetch": "2"
   },
