@@ -5,13 +5,13 @@ const getMainPage = async () => {
   const slides = $('rs-slide');
   const data = [];
   slides.map((i, el) => {
-    const subTitle = $(el).find('a[style*="z-index:10"]').text().trim();
-    const title = $(el).find('a[style*="z-index:9"]').text().trim();
-    const link = $(el).find('a[style*="z-index:9"]').attr('href').trim();
-    const img = $(el).find('img').attr('src').trim();
+    const title = $(el).data('title');
+    const description = $(el).data('description');
+    const link = $(el).data('link');
+    const img = $(el).find('img').data('lazyload');
     return data.push({
       title,
-      subTitle,
+      description,
       link,
       img,
     });
